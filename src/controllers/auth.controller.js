@@ -2,7 +2,7 @@ import * as authService from "../services/auth.service.js";
 
 export const login = async (req, res) => {
     const { username, password,ecole } = req.validated.body;
-
+    console.log(username,ecole)
     try {
 
         if (!username || !password) {
